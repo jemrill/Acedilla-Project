@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century;
+}
+
+#Acedilla {
+    background: linear-gradient(rgba(0,0,0,0.5),#383a3a),url(../Acedilla-Project/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 4% ;
+    left: 1%;
+}
+
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1 {
+    font-size: 110px;
+    color: wheat;
+
+}
+.banner-text p{
+    font-size: 20px;
+    font-family: Century ;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid rgb(79, 0, 116);
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    
+}
+
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top:  0;
+    left: 0;
+    background: rgb(236, 83, 83);
+    z-index: -1 ;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+
+}
+.banner-btn a:hover{
+    color: #000;
+
+}
+
+#sideNav{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #3a3838;
+    z-index: 2;
+    background: linear-gradient(rgba(0,0,0,0.5),#383a3a),url(../Acedilla-Project/1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fff;
+    transition: 0.5s;
+    
+
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and ( max-width: 770px) {
+    .banner-text h1 {
+        font-size: 44px;
+    
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+
+    }
+    
+}
+
+/*-----game-----*/
+
+#feature {
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.tittle-text{
+    text-align: center;
+    padding-bottom: 70px;
+
+}
+.tittle-text p{
+    margin: auto;
+    font-size: 50px;
+    color: #000000;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.tittle-text p::after{
+    content:'' ;
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#252525,rgb(255, 5, 5));
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.tittle-text h1{
+    font-size: 50px;
+
+}
+
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.feature {
+    flex-basis: 50%;
+    
+
+}
+
+.feature-img {
+    flex-basis: 30%;
+    margin: auto;
+    
+}
+
+.feature-img video{
+    width: 60%;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    
+    
+    
+}
+
+.feature h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: red;
+}
+
+.feature-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+}
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px) {
+    .tittle-text h1{
+        font-size: 35px;
+    }
+    .feature{
+        flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 100%;
+        
+    }
+    .feature-img img{
+        width: 100%;
+    }
+}
+/*-------service----*/
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(#4e4d4d,#fff);
+
+}
+
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    
+    
+}
+
+
+
+.single-service{
+    flex-basis: 58%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    color: #fff;
+    position: relative;
+    border: 3px solid black;
+}
+
+.single-service img{
+    width: 50%;
+    border-radius: 7px;
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+h2 {
+    font-size: 50px;
+    color: blanchedalmond;
+}
